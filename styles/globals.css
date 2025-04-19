@@ -1,4 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow%20Condensed%3Aregular%2C600%2C700%7CRoboto%3Aregular%2C700%7CAlfa%20Slab%20One%3Aregular%7CRoboto%20Serif%3Aregular%2C700&display=swap");
+@import "tailwindcss";
+
+@theme{
+  --font-roboto: "Roboto", sans-serif; 
+  --font-barlow: "Barlow Condensed", sans-serif
+}
+
 /* Resets padrões do navegador */
+/*
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +19,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: linear-gradient(45deg, #e63946, #f3a847); /* Gradiente de fundo */
+    background: linear-gradient(45deg, #e63946, #f3a847);
     color: #1a202c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,17 +31,7 @@
     padding: 0;
   }
   
-  /* Links */
-  a {
-    color: var(--color-light-text);
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-  }
-  
-  a:hover {
-    color: var(--color-dark-bg);
-    transform: scale(1.1); /* Aumenta o tamanho do link */
-  }
+*/
   
   /* Cores principais */
   :root {
@@ -44,17 +44,15 @@
   }
   
   /* Estilo global do conteúdo */
-  main {
+  /* main {
     padding: 60px 20px;
     text-align: center;
-    color: var(--color-light-text);
-  }
+  } */
   
-  h1, h2, h3, h4 {
+  /* h1, h2, h3, h4 {
     font-weight: 600;
-    color: var(--color-light-text);
     margin-bottom: 20px;
-  }
+  } */
   
   /* Cabeçalho */
   header {
@@ -67,7 +65,6 @@
   
   header h1 {
     font-size: 3rem;
-    color: var(--color-light-text);
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -138,7 +135,6 @@
   /* Rodapé */
   footer {
     background-color: var(--color-dark-bg);
-    color: var(--color-light-text);
     text-align: center;
     padding: 30px 20px;
   }
@@ -177,7 +173,6 @@
   .portfolio-title {
     font-size: 2.5rem;
     text-align: left; /* Alinha o título à esquerda */
-    color: var(--color-light-text);
     margin-bottom: 40px;
   }
   

@@ -8,7 +8,7 @@ export default function Contact() {
         <title>Contato - NEPCOM</title>
       </Head>
       <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-8">
-        <h1 className="text-3xl font-bold mb-4">Entre em Contato</h1>
+        <h1 className="text-3xl font-semibold mb-4">Entre em Contato</h1>
         <form
           action="https://formspree.io/f/your-form-id"
           method="POST"
