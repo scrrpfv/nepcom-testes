@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow%20Condensed%3Aregular%2C600%2C700%7CRoboto%3Aregular%2C700%7CAlfa%20Slab%20One%3Aregular%7CRoboto%20Serif%3Aregular%2C700&display=swap");
 @import "tailwindcss";
 
-@theme{
+:root {
   --font-roboto: "Roboto", sans-serif; 
-  --font-barlow: "Barlow Condensed", sans-serif
+  --font-barlow: "Barlow Condensed", sans-serif;
 }
 
 /* Resets padrões do navegador */
@@ -35,8 +35,8 @@
   
   /* Cores principais */
   :root {
-    --color-primary: #f3a847;  /* Amarelo */
-    --color-secondary: #e63946; /* Vermelho */
+    --color-primary: #d8ca0a;  /* Amarelo */
+    --color-secondary: #db111f; /* Vermelho */
     --color-background: #ffffff;
     --color-dark-bg: #1a202c;
     --color-light-text: #f7fafc;
@@ -56,16 +56,17 @@
   
   /* Cabeçalho */
   header {
-    text-align: center;
-    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
     background-color: var(--color-secondary);
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
   }
   
   header h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-transform: uppercase;
     letter-spacing: 4px;
   }
@@ -73,12 +74,9 @@
   /* Navbar */
   nav {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: right;
+    gap: 0px;
     padding: 20px 0;
-    background-color: var(--color-secondary);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   nav a {
@@ -86,7 +84,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: 0px;
     transition: background-color 0.3s, color 0.3s;
   }
   

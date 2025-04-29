@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header>
-      <h1 className='font-semibold'>NEPCOM</h1>
+      <h1 className='font-semibold text-white'>&lt;NEPCOM/&gt;</h1>
       <nav>
         <Link href="/">
           {/* <button className='text-neutral-50 transition-color hover:text-neutral-900'> */}
