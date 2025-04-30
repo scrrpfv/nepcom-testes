@@ -33,7 +33,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio-page">
       <Header />
-      <h2 className="portfolio-title">Nosso Portfólio</h2>
+      <h1 className='font-semibold text-size-[4rem] px-[20px] py-[60px]'>Nosso Portfólio</h1>
       <div className="portfolio-grid">
         {portfolioItems.map((item, index) => (
           <div className="portfolio-item" key={index}>
