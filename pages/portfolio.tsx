@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import React from 'react';
+import Header from '../components/Header';
 
 const portfolioItems = [
   {
@@ -30,6 +32,7 @@ const portfolioItems = [
 const Portfolio = () => {
   return (
     <div className="portfolio-page">
+      <Header />
       <h2 className="portfolio-title">Nosso Portfólio</h2>
       <div className="portfolio-grid">
         {portfolioItems.map((item, index) => (
