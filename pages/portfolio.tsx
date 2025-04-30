@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Header from '../components/Header';
+import Button from '../components/Button';
 
 const portfolioItems = [
   {
@@ -41,7 +42,9 @@ const Portfolio = () => {
             <div className="portfolio-item-content">
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <Link href={item.link}>Ver mais</Link>
+              <Link href={item.link}>
+                <Button text="ver mais"/>
+              </Link>
             </div>
           </div>
         ))}

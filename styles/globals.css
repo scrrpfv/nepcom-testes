@@ -2,45 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow%20Condensed%3Aregular%2C600%2C700%7CRoboto%3Aregular%2C700%7CAlfa%20Slab%20One%3Aregular%7CRoboto%20Serif%3Aregular%2C700&display=swap");
 @import "tailwindcss";
 
+@theme{
+  --color-primary: oklch(0.88 0.1733 96.4);
+  --color-secondary: oklch(0.57 0.2241 26.65); /* Vermelho */
+  --color-background: oklch(1 0 0);
+  --color-light-text: oklch(1 0 0);
+  --color-dark-text: oklch(0 0 0);
+}
+
 :root {
   --font-roboto: "Roboto", sans-serif; 
   --font-barlow: "Barlow Condensed", sans-serif;
 }
-
-/* Resets padrões do navegador */
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    background: linear-gradient(45deg, #e63946, #f3a847);
-    color: #1a202c;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-*/
   
   /* Cores principais */
   :root {
-    --color-primary: #d8ca0a;  /* Amarelo */
+    --color-primary: #fad72a;  /* Amarelo */
     --color-secondary: #db111f; /* Vermelho */
     --color-background: #ffffff;
     --color-dark-bg: #1a202c;
-    --color-light-text: #f7fafc;
-    --color-dark-text: #2d3748;
+    --color-light-text: #fff;
+    --color-dark-text: #000;
   }
   
   /* Estilo global do conteúdo */
@@ -76,29 +58,6 @@
     letter-spacing: 4px;
   }
   
-  /* Navbar */
-  nav {
-    display: flex;
-    justify-content: right;
-    gap: 0px;
-    padding: 20px 0;
-  }
-  
-  nav a {
-    color: var(--color-light-text);
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 0px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  nav a:hover {
-    background-color: var(--color-primary);
-    color: var(--color-dark-bg);
-    transform: scale(1.1); /* Aumenta o tamanho do link */
-  }
-  
   /* Layout do conteúdo */
   .content-wrapper {
     max-width: 1200px;
@@ -107,7 +66,7 @@
   }
   
   /* Formulário */
-  input, textarea, button {
+  input, textarea {
     font-size: 1rem;
     padding: 12px;
     border-radius: 8px;
@@ -123,17 +82,6 @@
     border-color: var(--color-primary);
   }
   
-  button {
-    background-color: var(--color-primary);
-    color: var(--color-dark-bg);
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  button:hover {
-    background-color: var(--color-secondary);
-    transform: scale(1.05);
-  }
   
   /* Rodapé */
   footer {
