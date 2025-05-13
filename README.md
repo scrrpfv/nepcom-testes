@@ -19,5 +19,5 @@ npm run build
 Depois rode com
 
 ```bash
-npm run devs
+npm run dev
 ```
