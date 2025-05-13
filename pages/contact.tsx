@@ -7,7 +7,9 @@ export default function Contact() {
       <Header />
       <main className='px-[20px] py-[60px]'>
         <h1 className="font-semibold text-size-[4rem]">Entre em Contato</h1>
-        <p className='mt-[20px]'>Somos uma equipe de desenvolvimento em TI, freelancing e soluções tecnológicas.</p>
+        <p className='mt-[20px]'>Estamos prontos para ouvir suas ideias, tirar dúvidas e ajudar a transformar desafios em soluções tecnológicas eficientes.
+Se você tem um projeto em mente, precisa de um site, sistema ou consultoria em TI, ou simplesmente quer saber mais sobre o nosso trabalho, fale com a gente!
+Nossa equipe está sempre aberta a novas conexões e parcerias..</p>
         <form
           action="https://formspree.io/f/xanoqdbq"
           method="POST"
