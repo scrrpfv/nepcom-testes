@@ -13,9 +13,9 @@ const Header = () => {
         <Link href="/about">
           <Button text="Sobre" styles="nav" />
         </Link>
-        <Link href="/portfolio">
+        {/*<Link href="/portfolio">
           <Button text="Portfólio" styles="nav" />
-        </Link>
+        </Link>*/}
         <Link href="/contact">
           <Button text="Contato" styles="nav" />
         </Link>
