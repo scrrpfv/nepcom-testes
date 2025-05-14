@@ -2,12 +2,15 @@ import Button from '../components/Button';
 import Header from '../components/Header';
 
 export default function Contact() {
+
+  let textClass = "w-full p-2 border rounded font-base p-[12px] border border-[gray-300] rounded-lg my-[8px] mx-0 w-100 box-border transition-colors duration-300 focus:outline-hidden focus:border-(--color-primary)";
+
   return (
     <div className='font-roboto'>
       <Header />
       <main className='px-[20px] py-[60px]'>
-        <h1 className="font-semibold text-size-[4rem]">Entre em Contato</h1>
-        <p className='mt-[20px]'>Estamos prontos para ouvir suas ideias, tirar dúvidas e ajudar a transformar desafios em soluções tecnológicas eficientes.<br /><br />
+        <h1 className="font-semibold text-4xl ml-[30px]">Entre em Contato</h1>
+        <p className='mt-[20px] text-xl'>Estamos prontos para ouvir suas ideias, tirar dúvidas e ajudar a transformar desafios em soluções tecnológicas eficientes.<br /><br />
 Se você tem um projeto em mente, precisa de um site, sistema ou consultoria em TI, ou simplesmente quer saber mais sobre o nosso trabalho, fale com a gente!
 Nossa equipe está sempre aberta a novas conexões e parcerias..</p>
         <form
@@ -20,20 +23,20 @@ Nossa equipe está sempre aberta a novas conexões e parcerias..</p>
             name="name"
             placeholder="Seu nome"
             required
-            className="w-full p-2 border rounded"
+            className={textClass}
           />
           <input
             type="email"
             name="email"
             placeholder="Seu e-mail"
             required
-            className="w-full p-2 border rounded"
+            className={textClass}
           />
           <textarea
             name="message"
             placeholder="Sua mensagem"
             required
-            className="w-full p-2 border rounded"
+            className={textClass}
           ></textarea>
           <Button text="Enviar" resize={false} />
         </form>

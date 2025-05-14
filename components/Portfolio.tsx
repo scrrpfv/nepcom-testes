@@ -31,7 +31,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio-page">
       <h2 className="portfolio-title">Nosso Portfólio</h2>
-      <div className="portfolio-grid">
+      <div className="px-10 py-20 grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-[20px] mx-auto max-w-[1200px]">
         {portfolioItems.map((item, index) => (
           <div className="portfolio-item" key={index}>
             <img src={item.image} alt={item.title} />
